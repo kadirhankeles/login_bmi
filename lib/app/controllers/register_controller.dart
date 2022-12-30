@@ -1,9 +1,10 @@
 
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:login_bmi/shared/service/auth_service.dart';
 
-class LoginController extends GetxController {
+import '../../shared/service/auth_service.dart';
+
+class RegisterController extends GetxController {
   AuthService authService = AuthService();
   TextEditingController mailController = TextEditingController();
   TextEditingController passController = TextEditingController();

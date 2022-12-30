@@ -1,9 +1,16 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:login_bmi/app/routes/app_pages.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
-void main() {
+import 'firebase_options.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(const MyApp());
 }
 
@@ -21,7 +28,7 @@ class MyApp extends StatelessWidget {
         initialRoute: AppPages.INITIAL,
         title: 'Flutter Demo',
         theme: ThemeData(
-            scaffoldBackgroundColor: Color.fromARGB(255, 2, 31, 55),
+            //scaffoldBackgroundColor: Color.fromARGB(255, 2, 31, 55),
 
         ),
        
@@ -31,6 +38,7 @@ class MyApp extends StatelessWidget {
 
     );
   }
+  
 }
 
 
