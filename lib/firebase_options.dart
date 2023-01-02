@@ -50,20 +50,20 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyAM9PCK0wkRh3USVKhz_heCIUoonzvKtBw',
-    appId: '1:515393829156:android:6e0118ed63f67d973c5bb1',
-    messagingSenderId: '515393829156',
-    projectId: 'login-panel-c2db9',
-    storageBucket: 'login-panel-c2db9.appspot.com',
+    apiKey: 'AIzaSyAkhDfg_Es0KxT1dlyOtU2exJsTgVh1Vss',
+    appId: '1:853151063848:android:db476aa909146b0585ba1d',
+    messagingSenderId: '853151063848',
+    projectId: 'bmiproject-439db',
+    storageBucket: 'bmiproject-439db.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAQVFkrPtyRrz62UJT8BSiJXQEwzi_vmtc',
-    appId: '1:515393829156:ios:d95611deab3dba7e3c5bb1',
-    messagingSenderId: '515393829156',
-    projectId: 'login-panel-c2db9',
-    storageBucket: 'login-panel-c2db9.appspot.com',
-    iosClientId: '515393829156-elrmf2o1vknc2jgrl8480r2pc9d5a7ln.apps.googleusercontent.com',
+    apiKey: 'AIzaSyCSBXUDU7OfUwp-22GUsdkoRjtzBJO55hs',
+    appId: '1:853151063848:ios:2811d66a8fd7a2a585ba1d',
+    messagingSenderId: '853151063848',
+    projectId: 'bmiproject-439db',
+    storageBucket: 'bmiproject-439db.appspot.com',
+    iosClientId: '853151063848-c5jn0bqc6emqp6s7j0og9ajl7v1o09he.apps.googleusercontent.com',
     iosBundleId: 'com.example.loginBmi',
   );
 }

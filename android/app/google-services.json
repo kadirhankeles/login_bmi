@@ -1,77 +1,34 @@
 {
   "project_info": {
-    "project_number": "515393829156",
-    "project_id": "login-panel-c2db9",
-    "storage_bucket": "login-panel-c2db9.appspot.com"
+    "project_number": "853151063848",
+    "project_id": "bmiproject-439db",
+    "storage_bucket": "bmiproject-439db.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:515393829156:android:6e0118ed63f67d973c5bb1",
+        "mobilesdk_app_id": "1:853151063848:android:db476aa909146b0585ba1d",
         "android_client_info": {
           "package_name": "com.example.login_bmi"
         }
       },
       "oauth_client": [
         {
-          "client_id": "515393829156-1af7ictajb3ucdb8epru8ip94vcpj098.apps.googleusercontent.com",
+          "client_id": "853151063848-4k7tvc09jt94v76fidfd42ffoesq6ge5.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAM9PCK0wkRh3USVKhz_heCIUoonzvKtBw"
+          "current_key": "AIzaSyAkhDfg_Es0KxT1dlyOtU2exJsTgVh1Vss"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "515393829156-1af7ictajb3ucdb8epru8ip94vcpj098.apps.googleusercontent.com",
+              "client_id": "853151063848-4k7tvc09jt94v76fidfd42ffoesq6ge5.apps.googleusercontent.com",
               "client_type": 3
-            },
-            {
-              "client_id": "515393829156-0s8sm9urg9sojuigu4vjdpi1bp8k5k7i.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.example.loginPanel"
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:515393829156:android:411331782b1541c73c5bb1",
-        "android_client_info": {
-          "package_name": "com.example.login_panel"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "515393829156-1af7ictajb3ucdb8epru8ip94vcpj098.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyAM9PCK0wkRh3USVKhz_heCIUoonzvKtBw"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "515393829156-1af7ictajb3ucdb8epru8ip94vcpj098.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "515393829156-0s8sm9urg9sojuigu4vjdpi1bp8k5k7i.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.example.loginPanel"
-              }
             }
           ]
         }

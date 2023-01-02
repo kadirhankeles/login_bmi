@@ -7,6 +7,7 @@ import '../../../controllers/home_controller.dart';
 class HomePage extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
+    
     return Scaffold(
         backgroundColor: Color(0xff6E34F0),
         body: Stack(
@@ -62,7 +63,7 @@ class HomePage extends GetView<HomeController> {
                           keyboardType:
                               TextInputType.numberWithOptions(decimal: true),
                           autovalidateMode: AutovalidateMode.onUserInteraction,
-                          //controller: controller.mailController,
+                          controller: controller.heightController,
                           style: TextStyle(
                               fontSize: 18,
                               height: 0.15.h,
@@ -94,7 +95,7 @@ class HomePage extends GetView<HomeController> {
                           ],
                           keyboardType: TextInputType.number,
                           autovalidateMode: AutovalidateMode.onUserInteraction,
-                          //controller: controller.mailController,
+                          controller: controller.weightController,
                           style: TextStyle(
                               fontSize: 18,
                               height: 0.15.h,
@@ -118,13 +119,23 @@ class HomePage extends GetView<HomeController> {
                         SizedBox(
                           height: 3.h,
                         ),
-                        //--------Login Butonu--------
+                        //--------Calculate Butonu--------
                         ElevatedButton(
                             style: ElevatedButton.styleFrom(
                               backgroundColor: Color(0xff7c43bd),
                               shape: StadiumBorder(),
                             ),
                             onPressed: () {
+                              if(controller.heightController.text.isEmpty || controller.weightController.text.isEmpty ){
+                                  Get.snackbar("Enter value", "Please enter values ​​in the relevant fields.");
+                              }else{
+                                if((double.parse(controller.heightController.text) > 50 && double.parse(controller.heightController.text) <= 220) && (double.parse(controller.weightController.text) > 0  && double.parse(controller.weightController.text) <= 300)){
+                                   controller.getDialog(double.parse(controller.heightController.text), double.parse(controller.weightController.text));
+                                } else{
+                                  Get.snackbar("Check the values", "Check and correct the entered values");
+                                }
+                              }
+                             
                               // controller.auth.loginUser(controller.mailController.text, controller.passController.text);
                             },
                             child: Text("        CALCULATE        ")),

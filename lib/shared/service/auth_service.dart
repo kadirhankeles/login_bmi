@@ -25,6 +25,8 @@ class AuthService extends GetxService {
     }
   }
 
+  
+
   loginUser(String mail, String password) async{
     try {
   final credential = await FirebaseAuth.instance.signInWithEmailAndPassword(
